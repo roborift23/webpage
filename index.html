@@ -71,8 +71,52 @@
       </div>
 
     </section>
-    
-    <script type="module" src="/main.js"></script>
+    <button name="Sign up">Sign up</button>
+    <form id="Sform" style="display: none;">
+        <label for="First name">Name:</label>
+  <input type="text" id="name" name="name" required>
+        <label for="Last name">Name:</label>
+  <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+        label {
+  font-weight: bold;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+      <label for="contact">Contact:</label>
+      <input type="text" id="contact" name="contact" required>
+      label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+  <button type="submit">Submit</button>
+      <button type="cancel">Cancel</button>
+</form>
+      var showFormButton = document.getElementById("showFormButton");
+var myForm = document.getElementById("myForm");
+
+showFormButton.addEventListener("click", function() {
+  if (myForm.style.display === "none" || myForm.style.display === "") {
+    myForm.style.display = "block"; // Show the form
+  } else {
+    myForm.style.display = "none"; // Hide the form
+  }
+});
+      <script type="module" src="/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   </body>
 </html>
